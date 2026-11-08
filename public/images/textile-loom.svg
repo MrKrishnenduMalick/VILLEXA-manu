@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="loomSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stopColor="#040916"/>
+      <stop offset="60%" stopColor="#09172f"/>
+      <stop offset="100%" stopColor="#030814"/>
+    </linearGradient>
+    <linearGradient id="metalSilver" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stopColor="#1e293b"/>
+      <stop offset="50%" stopColor="#64748b"/>
+      <stop offset="100%" stopColor="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="overheadGold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stopColor="#fffae6" stopOpacity="0.9"/>
+      <stop offset="30%" stopColor="#f59e0b" stopOpacity="0.6"/>
+      <stop offset="100%" stopColor="#f59e0b" stopOpacity="0"/>
+    </linearGradient>
+    <linearGradient id="fabricSpool" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stopColor="#fef3c7"/>
+      <stop offset="50%" stopColor="#f8fafc"/>
+      <stop offset="100%" stopColor="#cbd5e1"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="600" fill="url(#loomSky)"/>
+
+  <!--  -->
+  <g opacity="0.8">
+    <ellipse cx="250" cy="80" rx="40" ry="10" fill="#fef08a"/>
+    <path d="M 210 80 L 100 450 L 400 450 L 290 80 Z" fill="url(#overheadGold)" opacity="0.4"/>
+
+    <ellipse cx="500" cy="80" rx="40" ry="10" fill="#fef08a"/>
+    <path d="M 460 80 L 350 450 L 650 450 L 540 80 Z" fill="url(#overheadGold)" opacity="0.4"/>
+
+    <ellipse cx="750" cy="80" rx="40" ry="10" fill="#fef08a"/>
+    <path d="M 710 80 L 600 450 L 900 450 L 790 80 Z" fill="url(#overheadGold)" opacity="0.4"/>
+  </g>
+
+  <!--  -->
+  <!--  -->
+  <polygon points="0,200 400,280 400,550 0,600" fill="#091428" stroke="#1e293b" stroke-width="2"/>
+  
+  <!--  -->
+  <polygon points="400,280 600,280 800,600 200,600" fill="#040913"/>
+  <line x1="500" y1="280" x2="500" y2="600" stroke="#f59e0b" stroke-width="2" stroke-opacity="0.5" stroke-dasharray="10 8"/>
+
+  <!--  -->
+  <g transform="translate(420, 260)">
+    <!--  -->
+    <rect x="0" y="0" width="30" height="90" fill="url(#metalSilver)"/>
+    <rect x="35" y="10" width="25" height="70" fill="url(#fabricSpool)"/>
+
+    <!--  -->
+    <rect x="70" y="15" width="45" height="130" fill="url(#metalSilver)"/>
+    <rect x="120" y="30" width="35" height="100" fill="url(#fabricSpool)"/>
+
+    <!--  -->
+    <rect x="170" y="35" width="60" height="180" fill="url(#metalSilver)"/>
+    <rect x="235" y="55" width="50" height="140" fill="url(#fabricSpool)"/>
+
+    <!--  -->
+    <g transform="translate(300, 50)">
+      <rect x="0" y="0" width="100" height="260" rx="8" fill="url(#metalSilver)" stroke="#475569" stroke-width="2"/>
+      
+      <!--  -->
+      <rect x="110" y="30" width="85" height="200" rx="10" fill="url(#fabricSpool)" stroke="#94a3b8" stroke-width="2"/>
+      <ellipse cx="152" cy="30" rx="42" ry="15" fill="#f8fafc" stroke="#64748b" stroke-width="1.5"/>
+      <ellipse cx="152" cy="230" rx="42" ry="15" fill="#94a3b8"/>
+
+      <!--  -->
+      <rect x="15" y="40" width="70" height="50" rx="4" fill="#030712" stroke="#334155" stroke-width="1.5"/>
+      <circle cx="30" cy="55" r="4" fill="#22c55e" class="animate-pulse"/>
+      <circle cx="50" cy="55" r="4" fill="#38bdf8"/>
+      <circle cx="70" cy="55" r="4" fill="#f59e0b"/>
+      <rect x="25" y="70" width="50" height="10" rx="2" fill="#1e293b"/>
+
+      <!--  -->
+      <line x1="110" y1="60" x2="-200" y2="100" stroke="#fde68a" stroke-width="1" stroke-opacity="0.7"/>
+      <line x1="110" y1="90" x2="-200" y2="120" stroke="#fde68a" stroke-width="1" stroke-opacity="0.7"/>
+      <line x1="110" y1="120" x2="-200" y2="140" stroke="#fde68a" stroke-width="1" stroke-opacity="0.7"/>
+      <line x1="110" y1="150" x2="-200" y2="160" stroke="#fde68a" stroke-width="1" stroke-opacity="0.7"/>
+    </g>
+  </g>
+
+  <!--  -->
+  <polygon points="100,560 900,560 950,600 50,600" fill="#f59e0b" fill-opacity="0.08"/>
+</svg>
+

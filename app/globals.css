@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* Crystal-clear transparent glassmorphism utilities */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.035);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow: 0 10px 35px 0 rgba(0, 0, 0, 0.45), inset 0 1px 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.glass-panel-gold {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(15, 23, 42, 0.25) 50%, rgba(7, 16, 34, 0.45) 100%);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(229, 169, 60, 0.5);
+  box-shadow: 0 16px 50px 0 rgba(0, 0, 0, 0.6), 0 0 35px 0 rgba(229, 169, 60, 0.35), inset 0 1px 2px 0 rgba(255, 235, 170, 0.35);
+}
+
+/* Glowing golden edges */
+.glow-gold-edge {
+  box-shadow: 0 0 30px -2px rgba(229, 169, 60, 0.4);
+}
+
+/* White Marble Mode Styling */
+.theme-white-marble {
+  color: #0f172a;
+}
+
+.theme-white-marble h1:not([class*="text-transparent"]),
+.theme-white-marble h2:not([class*="text-transparent"]),
+.theme-white-marble h3:not([class*="text-transparent"]),
+.theme-white-marble h4:not([class*="text-transparent"]) {
+  color: #0a192f;
+}
+
+.theme-white-marble .text-slate-300,
+.theme-white-marble .text-slate-400 {
+  color: #334155 !important;
+}
+
+.theme-white-marble .text-slate-200 {
+  color: #1e293b !important;
+}
+
+.theme-white-marble .text-slate-100,
+.theme-white-marble .text-white {
+  color: #0f172a !important;
+}
+
+.theme-white-marble .text-transparent {
+  color: transparent !important;
+}
+
+.theme-white-marble .glass-panel {
+  background: rgba(255, 255, 255, 0.8) !important;
+  border: 1px solid rgba(229, 169, 60, 0.45) !important;
+  box-shadow: 0 14px 45px rgba(15, 23, 42, 0.08), 0 0 25px rgba(229, 169, 60, 0.2) !important;
+}
+
+.theme-white-marble div[class*="bg-white/["],
+.theme-white-marble div[class*="bg-white/5"] {
+  background-color: rgba(255, 255, 255, 0.75) !important;
+  border-color: rgba(229, 169, 60, 0.4) !important;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08), 0 0 15px rgba(229, 169, 60, 0.15) !important;
+}
+
+.theme-white-marble a[class*="bg-white/["] {
+  background-color: rgba(255, 255, 255, 0.85) !important;
+  color: #0f172a !important;
+  border-color: rgba(229, 169, 60, 0.5) !important;
+}
+
+.theme-white-marble .glass-panel-gold {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.92) 0%, rgba(248, 250, 252, 0.85) 100%) !important;
+  border: 1.5px solid rgba(229, 169, 60, 0.6) !important;
+  box-shadow: 0 16px 50px rgba(15, 23, 42, 0.1), 0 0 35px rgba(229, 169, 60, 0.3) !important;
+}
+
+.theme-white-marble footer {
+  background: rgba(255, 255, 255, 0.88) !important;
+  border-top-color: rgba(229, 169, 60, 0.35) !important;
+}
+
+.theme-white-marble footer a,
+.theme-white-marble footer p,
+.theme-white-marble footer span {
+  color: #334155 !important;
+}
+
+.theme-white-marble footer h4 {
+  color: #0a192f !important;
+}
+
+.theme-white-marble input,
+.theme-white-marble textarea,
+.theme-white-marble select {
+  background-color: rgba(255, 255, 255, 0.85) !important;
+  color: #0f172a !important;
+  border-color: rgba(229, 169, 60, 0.45) !important;
+}
+
+.theme-white-marble input::placeholder,
+.theme-white-marble textarea::placeholder {
+  color: #64748b !important;
+}
+
+/* Midnight Mode Styling */
+.theme-midnight {
+  color: #f8fafc;
+}
+
+/* Custom sleek scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(3, 7, 18, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e3a6d;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e5a93c;
+}

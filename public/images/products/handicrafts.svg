@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <radialGradient id="craftBg" cx="50%" cy="45%" r="70%">
+      <stop offset="0%" stopColor="#2e2213" stopOpacity="0.95"/>
+      <stop offset="100%" stopColor="#0a0804" stopOpacity="1"/>
+    </radialGradient>
+    <radialGradient id="lampGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stopColor="#fffbeb" stopOpacity="1"/>
+      <stop offset="40%" stopColor="#f59e0b" stopOpacity="0.9"/>
+      <stop offset="80%" stopColor="#b45309" stopOpacity="0.4"/>
+      <stop offset="100%" stopColor="#78350f" stopOpacity="0"/>
+    </radialGradient>
+    <linearGradient id="brassGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#fef08a"/>
+      <stop offset="35%" stopColor="#d97706"/>
+      <stop offset="70%" stopColor="#92400e"/>
+      <stop offset="100%" stopColor="#451a03"/>
+    </linearGradient>
+    <filter id="lanternGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="0" stdDeviation="15" flood-color="#f59e0b" flood-opacity="0.6"/>
+      <feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="300" fill="url(#craftBg)"/>
+
+  <!--  -->
+  <circle cx="200" cy="165" r="95" fill="url(#lampGlow)" class="animate-pulse"/>
+
+  <!--  -->
+  <g transform="translate(100, 35)" filter="url(#lanternGlow)">
+    <!--  -->
+    <ellipse cx="100" cy="15" rx="14" ry="10" fill="none" stroke="url(#brassGrad)" stroke-width="4"/>
+    
+    <!--  -->
+    <path d="M 90 25 L 110 25 L 105 35 L 95 35 Z" fill="url(#brassGrad)"/>
+    <ellipse cx="100" cy="38" rx="28" ry="8" fill="url(#brassGrad)"/>
+    <path d="M 72 38 C 72 65, 128 65, 128 38 Z" fill="url(#brassGrad)"/>
+
+    <!--  -->
+    <path d="M 50 75 Q 100 45 150 75 L 140 90 Q 100 70 60 90 Z" fill="url(#brassGrad)"/>
+
+    <!--  -->
+    <path d="M 60 90 C 20 130, 20 180, 60 215 L 140 215 C 180 180, 180 130, 140 90 Z" fill="url(#brassGrad)"/>
+
+    <!--  -->
+    <g fill="#fffbeb" stroke="#f59e0b" stroke-width="0.8">
+      <!--  -->
+      <circle cx="100" cy="115" r="5"/>
+      <circle cx="80" cy="120" r="4.5"/>
+      <circle cx="120" cy="120" r="4.5"/>
+      <circle cx="62" cy="130" r="4"/>
+      <circle cx="138" cy="130" r="4"/>
+
+      <!--  -->
+      <circle cx="100" cy="152" r="7" fill="#ffffff"/>
+      <circle cx="85" cy="145" r="4"/>
+      <circle cx="115" cy="145" r="4"/>
+      <circle cx="85" cy="160" r="4"/>
+      <circle cx="115" cy="160" r="4"/>
+      <circle cx="70" cy="152" r="4"/>
+      <circle cx="130" cy="152" r="4"/>
+
+      <!--  -->
+      <circle cx="100" cy="188" r="5"/>
+      <circle cx="80" cy="184" r="4.5"/>
+      <circle cx="120" cy="184" r="4.5"/>
+      <circle cx="64" cy="175" r="4"/>
+      <circle cx="136" cy="175" r="4"/>
+
+      <!--  -->
+      <path d="M 100 128 Q 105 138 100 142 Q 95 138 100 128 Z"/>
+      <path d="M 100 162 Q 105 172 100 176 Q 95 172 100 162 Z"/>
+    </g>
+
+    <!--  -->
+    <path d="M 60 215 L 50 230 L 150 230 L 140 215 Z" fill="url(#brassGrad)"/>
+    <ellipse cx="100" cy="232" rx="55" ry="8" fill="url(#brassGrad)"/>
+    <rect x="55" y="232" width="90" height="10" rx="3" fill="#5c2c06"/>
+  </g>
+
+  <!--  -->
+  <ellipse cx="200" cy="275" rx="130" ry="18" fill="#f59e0b" fill-opacity="0.25" filter="blur(8px)"/>
+  <circle cx="80" cy="80" r="1.5" fill="#fde68a" opacity="0.6"/>
+  <circle cx="320" cy="90" r="2" fill="#fde68a" opacity="0.7"/>
+  <circle cx="340" cy="190" r="1.5" fill="#fde68a" opacity="0.5"/>
+</svg>
+

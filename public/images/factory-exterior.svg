@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="extSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stopColor="#0b1b36"/>
+      <stop offset="60%" stopColor="#1e3a6d"/>
+      <stop offset="90%" stopColor="#d97706" stopOpacity="0.4"/>
+      <stop offset="100%" stopColor="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="plantWall" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stopColor="#1e293b"/>
+      <stop offset="50%" stopColor="#334155"/>
+      <stop offset="100%" stopColor="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="glassBay" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stopColor="#fde68a" stopOpacity="0.9"/>
+      <stop offset="100%" stopColor="#d97706" stopOpacity="0.7"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="400" fill="url(#extSky)"/>
+
+  <!--  -->
+  <polygon points="50,220 120,200 180,210 220,190 280,210 280,260 50,260" fill="#091428" opacity="0.6"/>
+
+  <!--  -->
+  <g transform="translate(60, 160)">
+    <!--  -->
+    <polygon points="0,50 480,20 480,180 0,180" fill="url(#plantWall)" stroke="#475569" stroke-width="1.5"/>
+    <polygon points="-10,50 490,18 490,26 -10,58" fill="#f59e0b" opacity="0.9"/>
+
+    <!--  -->
+    <rect x="30" y="60" width="120" height="6" fill="#f59e0b"/>
+    <text x="30" y="85" fill="#ffffff" font-family="sans-serif" font-weight="bold" font-size="14" letter-spacing="1">
+      UNIT 02 · EXPORT COMPLEX
+    </text>
+
+    <!--  -->
+    <g fill="url(#glassBay)" opacity="0.85">
+      <rect x="30" y="100" width="40" height="40" rx="3"/>
+      <rect x="80" y="100" width="40" height="40" rx="3"/>
+      <rect x="130" y="100" width="40" height="40" rx="3"/>
+      <rect x="180" y="100" width="40" height="40" rx="3"/>
+      <rect x="230" y="100" width="40" height="40" rx="3"/>
+      <rect x="280" y="100" width="40" height="40" rx="3"/>
+      <rect x="330" y="100" width="40" height="40" rx="3"/>
+      <rect x="380" y="100" width="40" height="40" rx="3"/>
+      <rect x="430" y="100" width="30" height="40" rx="3"/>
+    </g>
+
+    <!--  -->
+    <rect x="100" y="145" width="45" height="35" fill="#0f172a" stroke="#64748b" stroke-width="1"/>
+    <rect x="160" y="145" width="45" height="35" fill="#0f172a" stroke="#64748b" stroke-width="1"/>
+    <rect x="220" y="145" width="45" height="35" fill="#0f172a" stroke="#64748b" stroke-width="1"/>
+  </g>
+
+  <!--  -->
+  <polygon points="0,330 600,310 600,400 0,400" fill="#060c18"/>
+  <polygon points="0,345 600,325 600,360 0,375" fill="#064e3b" opacity="0.4"/>
+
+  <!--  -->
+  <line x1="80" y1="280" x2="80" y2="340" stroke="#94a3b8" stroke-width="2"/>
+  <circle cx="80" cy="278" r="4" fill="#fef08a"/>
+  
+  <line x1="300" y1="270" x2="300" y2="330" stroke="#94a3b8" stroke-width="2"/>
+  <circle cx="300" cy="268" r="4" fill="#fef08a"/>
+
+  <line x1="520" y1="260" x2="520" y2="320" stroke="#94a3b8" stroke-width="2"/>
+  <circle cx="520" cy="258" r="4" fill="#fef08a"/>
+</svg>
+

@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <radialGradient id="apparelBg" cx="50%" cy="30%" r="65%">
+      <stop offset="0%" stopColor="#1e2238" stopOpacity="0.9"/>
+      <stop offset="100%" stopColor="#080c17" stopOpacity="1"/>
+    </radialGradient>
+    <linearGradient id="shirtPink" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#f48fb1"/>
+      <stop offset="50%" stopColor="#d81b60"/>
+      <stop offset="100%" stopColor="#880e4f"/>
+    </linearGradient>
+    <linearGradient id="shirtMauve" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#ce93d8"/>
+      <stop offset="50%" stopColor="#8e24aa"/>
+      <stop offset="100%" stopColor="#4a148c"/>
+    </linearGradient>
+    <linearGradient id="shirtNavy" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#90caf9"/>
+      <stop offset="50%" stopColor="#1e88e5"/>
+      <stop offset="100%" stopColor="#0d47a1"/>
+    </linearGradient>
+    <linearGradient id="hangerWood" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stopColor="#d7ccc8"/>
+      <stop offset="50%" stopColor="#8d6e63"/>
+      <stop offset="100%" stopColor="#4e342e"/>
+    </linearGradient>
+    <linearGradient id="metalHook" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stopColor="#fff9c4"/>
+      <stop offset="100%" stopColor="#f59e0b"/>
+    </linearGradient>
+    <filter id="shadowApparel" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="10" stdDeviation="8" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="300" fill="url(#apparelBg)"/>
+
+  <!--  -->
+  <line x1="40" y1="40" x2="360" y2="40" stroke="#f59e0b" stroke-width="3" stroke-opacity="0.8"/>
+  <ellipse cx="200" cy="270" rx="140" ry="20" fill="#f59e0b" fill-opacity="0.08" filter="blur(8px)"/>
+
+  <!--  -->
+  <g transform="translate(60, 40) scale(0.85)" opacity="0.65" filter="url(#shadowApparel)">
+    <!--  -->
+    <path d="M 100 0 C 100 -25, 125 -25, 125 0 L 100 25" fill="none" stroke="url(#metalHook)" stroke-width="3"/>
+    <!--  -->
+    <path d="M 20 50 L 100 25 L 180 50 Z" fill="url(#hangerWood)"/>
+    <!--  -->
+    <path d="M 35 48 L 5 80 L 35 95 L 45 75 L 45 220 L 155 220 L 155 75 L 165 95 L 195 80 L 165 48 Z" fill="url(#shirtMauve)"/>
+  </g>
+
+  <!--  -->
+  <g transform="translate(180, 40) scale(0.85)" opacity="0.65" filter="url(#shadowApparel)">
+    <!--  -->
+    <path d="M 100 0 C 100 -25, 125 -25, 125 0 L 100 25" fill="none" stroke="url(#metalHook)" stroke-width="3"/>
+    <!--  -->
+    <path d="M 20 50 L 100 25 L 180 50 Z" fill="url(#hangerWood)"/>
+    <!--  -->
+    <path d="M 35 48 L 5 80 L 35 95 L 45 75 L 45 220 L 155 220 L 155 75 L 165 95 L 195 80 L 165 48 Z" fill="url(#shirtNavy)"/>
+  </g>
+
+  <!--  -->
+  <g transform="translate(100, 30)" filter="url(#shadowApparel)">
+    <!--  -->
+    <path d="M 100 0 C 100 -25, 125 -25, 125 -10 L 100 15" fill="none" stroke="url(#metalHook)" stroke-width="3.5" stroke-linecap="round"/>
+    
+    <!--  -->
+    <path d="M 15 45 Q 100 20 185 45 L 175 52 Q 100 30 25 52 Z" fill="url(#hangerWood)"/>
+    
+    <!--  -->
+    <path d="M 35 45 L 0 85 L 35 105 L 45 80 L 45 235 Q 100 240 155 235 L 155 80 L 165 105 L 200 85 L 165 45 Z" fill="url(#shirtPink)"/>
+    
+    <!--  -->
+    <path d="M 72 45 L 90 75 L 100 50 L 110 75 L 128 45 Q 100 35 72 45 Z" fill="#ad1457" stroke="#f48fb1" stroke-width="1"/>
+    
+    <!--  -->
+    <rect x="94" y="55" width="12" height="55" fill="#880e4f" rx="2"/>
+    <circle cx="100" cy="68" r="2.5" fill="#fce4ec"/>
+    <circle cx="100" cy="85" r="2.5" fill="#fce4ec"/>
+    <circle cx="100" cy="100" r="2.5" fill="#fce4ec"/>
+
+    <!--  -->
+    <path d="M 55 90 Q 75 160 55 230" stroke="#f48fb1" stroke-width="1.5" stroke-opacity="0.4" fill="none"/>
+    <path d="M 145 90 Q 125 160 145 230" stroke="#880e4f" stroke-width="2" stroke-opacity="0.6" fill="none"/>
+    
+    <!--  -->
+    <circle cx="75" cy="105" r="6" stroke="#f59e0b" stroke-width="1" fill="#880e4f"/>
+    <path d="M 72 105 L 78 105 M 75 102 L 75 108" stroke="#fde68a" stroke-width="1"/>
+  </g>
+</svg>
+
